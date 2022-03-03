@@ -39,3 +39,7 @@ def solve(s):
     return z
   
 # solution 2
+def solve(s):
+    for x in s[:].split():
+        s = s.replace(x, x.capitalize())
+    return s
